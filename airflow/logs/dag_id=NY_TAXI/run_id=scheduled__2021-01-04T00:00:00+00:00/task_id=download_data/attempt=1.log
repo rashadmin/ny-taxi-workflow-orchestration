@@ -1,0 +1,91 @@
+[2024-09-22T15:14:09.527+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-22T15:14:09.954+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: NY_TAXI.download_data scheduled__2021-01-04T00:00:00+00:00 [queued]>
+[2024-09-22T15:14:10.173+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: NY_TAXI.download_data scheduled__2021-01-04T00:00:00+00:00 [queued]>
+[2024-09-22T15:14:10.173+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2024-09-22T15:14:10.906+0000] {taskinstance.py:2888} INFO - Executing <Task(BashOperator): download_data> on 2021-01-04 00:00:00+00:00
+[2024-09-22T15:14:11.187+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'NY_TAXI', 'download_data', 'scheduled__2021-01-04T00:00:00+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/download.py', '--cfg-path', '/tmp/tmpjl416vqz']
+[2024-09-22T15:14:11.218+0000] {standard_task_runner.py:105} INFO - Job 10: Subtask download_data
+[2024-09-22T15:14:17.858+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=318) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-22T15:14:17.859+0000] {standard_task_runner.py:72} INFO - Started process 365 to run task
+[2024-09-22T15:14:28.850+0000] {task_command.py:467} INFO - Running <TaskInstance: NY_TAXI.download_data scheduled__2021-01-04T00:00:00+00:00 [running]> on host 8c9160901df5
+[2024-09-22T15:14:33.819+0000] {job.py:229} INFO - Heartbeat recovered after 25.37 seconds
+[2024-09-22T15:14:35.063+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='NY_TAXI' AIRFLOW_CTX_TASK_ID='download_data' AIRFLOW_CTX_EXECUTION_DATE='2021-01-04T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2021-01-04T00:00:00+00:00'
+[2024-09-22T15:14:35.064+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-22T15:14:35.132+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-09-22T15:14:35.133+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'echo 2021-01-04']
+[2024-09-22T15:14:35.166+0000] {subprocess.py:86} INFO - Output:
+[2024-09-22T15:14:35.168+0000] {subprocess.py:93} INFO - 2021-01-04
+[2024-09-22T15:14:35.169+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-09-22T15:14:35.764+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-22T15:14:35.765+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=NY_TAXI, task_id=download_data, run_id=scheduled__2021-01-04T00:00:00+00:00, execution_date=20210104T000000, start_date=20240922T151409, end_date=20240922T151435
+[2024-09-22T15:14:36.312+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-09-22T15:14:36.347+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-22T15:14:36.621+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2024-09-22T15:33:09.681+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-22T15:33:09.938+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: NY_TAXI.download_data scheduled__2021-01-04T00:00:00+00:00 [queued]>
+[2024-09-22T15:33:09.952+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: NY_TAXI.download_data scheduled__2021-01-04T00:00:00+00:00 [queued]>
+[2024-09-22T15:33:09.952+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2024-09-22T15:33:10.086+0000] {taskinstance.py:2888} INFO - Executing <Task(BashOperator): download_data> on 2021-01-04 00:00:00+00:00
+[2024-09-22T15:33:10.099+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'NY_TAXI', 'download_data', 'scheduled__2021-01-04T00:00:00+00:00', '--job-id', '414', '--raw', '--subdir', 'DAGS_FOLDER/download.py', '--cfg-path', '/tmp/tmpr75ujhp6']
+[2024-09-22T15:33:10.104+0000] {standard_task_runner.py:105} INFO - Job 414: Subtask download_data
+[2024-09-22T15:33:10.106+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=291) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-22T15:33:10.107+0000] {standard_task_runner.py:72} INFO - Started process 293 to run task
+[2024-09-22T15:33:10.269+0000] {task_command.py:467} INFO - Running <TaskInstance: NY_TAXI.download_data scheduled__2021-01-04T00:00:00+00:00 [running]> on host 8c9160901df5
+[2024-09-22T15:33:11.003+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='NY_TAXI' AIRFLOW_CTX_TASK_ID='download_data' AIRFLOW_CTX_EXECUTION_DATE='2021-01-04T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2021-01-04T00:00:00+00:00'
+[2024-09-22T15:33:11.004+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-22T15:33:14.178+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-09-22T15:33:14.251+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'echo 2021-01-04']
+[2024-09-22T15:33:14.423+0000] {subprocess.py:86} INFO - Output:
+[2024-09-22T15:33:15.430+0000] {subprocess.py:93} INFO - 2021-01-04
+[2024-09-22T15:33:15.432+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-09-22T15:33:15.679+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-22T15:33:15.682+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=NY_TAXI, task_id=download_data, run_id=scheduled__2021-01-04T00:00:00+00:00, execution_date=20210104T000000, start_date=20240922T153309, end_date=20240922T153315
+[2024-09-22T15:33:16.083+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-09-22T15:33:16.108+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-22T15:33:16.448+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2024-09-22T15:41:35.447+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-22T15:41:35.487+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: NY_TAXI.download_data scheduled__2021-01-04T00:00:00+00:00 [queued]>
+[2024-09-22T15:41:35.500+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: NY_TAXI.download_data scheduled__2021-01-04T00:00:00+00:00 [queued]>
+[2024-09-22T15:41:35.501+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2024-09-22T15:41:35.624+0000] {taskinstance.py:2888} INFO - Executing <Task(BashOperator): download_data> on 2021-01-04 00:00:00+00:00
+[2024-09-22T15:41:35.638+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'NY_TAXI', 'download_data', 'scheduled__2021-01-04T00:00:00+00:00', '--job-id', '420', '--raw', '--subdir', 'DAGS_FOLDER/download.py', '--cfg-path', '/tmp/tmpenqsmrmv']
+[2024-09-22T15:41:35.641+0000] {standard_task_runner.py:105} INFO - Job 420: Subtask download_data
+[2024-09-22T15:41:35.707+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=494) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-22T15:41:35.708+0000] {standard_task_runner.py:72} INFO - Started process 498 to run task
+[2024-09-22T15:41:35.761+0000] {task_command.py:467} INFO - Running <TaskInstance: NY_TAXI.download_data scheduled__2021-01-04T00:00:00+00:00 [running]> on host 8c9160901df5
+[2024-09-22T15:41:35.965+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='NY_TAXI' AIRFLOW_CTX_TASK_ID='download_data' AIRFLOW_CTX_EXECUTION_DATE='2021-01-04T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2021-01-04T00:00:00+00:00'
+[2024-09-22T15:41:35.966+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-22T15:41:35.992+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-09-22T15:41:35.993+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'echo 2021-01-04 2021-01-04 00:00:00+00:00']
+[2024-09-22T15:41:36.022+0000] {subprocess.py:86} INFO - Output:
+[2024-09-22T15:41:36.025+0000] {subprocess.py:93} INFO - 2021-01-04 2021-01-04 00:00:00+00:00
+[2024-09-22T15:41:36.026+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-09-22T15:41:36.892+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-22T15:41:36.893+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=NY_TAXI, task_id=download_data, run_id=scheduled__2021-01-04T00:00:00+00:00, execution_date=20210104T000000, start_date=20240922T154135, end_date=20240922T154136
+[2024-09-22T15:41:37.098+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-09-22T15:41:37.181+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-22T15:41:37.206+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2024-09-23T08:17:43.558+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-23T08:17:47.438+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: NY_TAXI.download_data scheduled__2021-01-04T00:00:00+00:00 [queued]>
+[2024-09-23T08:17:48.342+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: NY_TAXI.download_data scheduled__2021-01-04T00:00:00+00:00 [queued]>
+[2024-09-23T08:17:48.343+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2024-09-23T08:17:50.219+0000] {taskinstance.py:2888} INFO - Executing <Task(BashOperator): download_data> on 2021-01-04 00:00:00+00:00
+[2024-09-23T08:17:50.243+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'NY_TAXI', 'download_data', 'scheduled__2021-01-04T00:00:00+00:00', '--job-id', '427', '--raw', '--subdir', 'DAGS_FOLDER/download.py', '--cfg-path', '/tmp/tmpbl42zz1j']
+[2024-09-23T08:17:50.247+0000] {standard_task_runner.py:105} INFO - Job 427: Subtask download_data
+[2024-09-23T08:17:50.470+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=385) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-23T08:17:50.471+0000] {standard_task_runner.py:72} INFO - Started process 417 to run task
+[2024-09-23T08:17:52.707+0000] {task_command.py:467} INFO - Running <TaskInstance: NY_TAXI.download_data scheduled__2021-01-04T00:00:00+00:00 [running]> on host c6317fbbba71
+[2024-09-23T08:17:58.759+0000] {job.py:229} INFO - Heartbeat recovered after 23.03 seconds
+[2024-09-23T08:18:06.821+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='NY_TAXI' AIRFLOW_CTX_TASK_ID='download_data' AIRFLOW_CTX_EXECUTION_DATE='2021-01-04T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2021-01-04T00:00:00+00:00'
+[2024-09-23T08:18:06.963+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-23T08:18:28.570+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-09-23T08:18:29.167+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'echo /opt/***']
+[2024-09-23T08:18:30.045+0000] {subprocess.py:86} INFO - Output:
+[2024-09-23T08:18:31.061+0000] {subprocess.py:93} INFO - /opt/***
+[2024-09-23T08:18:31.192+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-09-23T08:18:36.052+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-23T08:18:36.557+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=NY_TAXI, task_id=download_data, run_id=scheduled__2021-01-04T00:00:00+00:00, execution_date=20210104T000000, start_date=20240923T081747, end_date=20240923T081836
+[2024-09-23T08:18:41.243+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-09-23T08:18:42.439+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-23T08:18:42.516+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2024-09-23T08:18:43.466+0000] {standard_task_runner.py:217} INFO - Process not found (most likely exited), stop collecting metrics

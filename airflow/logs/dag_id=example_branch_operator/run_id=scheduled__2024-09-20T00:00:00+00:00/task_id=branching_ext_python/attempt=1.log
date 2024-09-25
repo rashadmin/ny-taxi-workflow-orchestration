@@ -1,0 +1,27 @@
+[2024-09-22T11:19:27.110+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-09-22T11:19:27.308+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_branch_operator.branching_ext_python scheduled__2024-09-20T00:00:00+00:00 [queued]>
+[2024-09-22T11:19:27.387+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_branch_operator.branching_ext_python scheduled__2024-09-20T00:00:00+00:00 [queued]>
+[2024-09-22T11:19:27.388+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-09-22T11:19:27.884+0000] {taskinstance.py:2330} INFO - Executing <Task(BranchExternalPythonOperator): branching_ext_python> on 2024-09-20 00:00:00+00:00
+[2024-09-22T11:19:27.915+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=435) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-09-22T11:19:27.926+0000] {standard_task_runner.py:64} INFO - Started process 449 to run task
+[2024-09-22T11:19:27.924+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'example_branch_operator', 'branching_ext_python', 'scheduled__2024-09-20T00:00:00+00:00', '--job-id', '2548', '--raw', '--subdir', '/home/***/.local/lib/python3.12/site-packages/***/example_dags/example_branch_operator.py', '--cfg-path', '/tmp/tmp5vt97_y2']
+[2024-09-22T11:19:27.935+0000] {standard_task_runner.py:91} INFO - Job 2548: Subtask branching_ext_python
+[2024-09-22T11:19:28.478+0000] {task_command.py:426} INFO - Running <TaskInstance: example_branch_operator.branching_ext_python scheduled__2024-09-20T00:00:00+00:00 [running]> on host 1d2bd9c1668e
+[2024-09-22T11:19:34.043+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='example_branch_operator' AIRFLOW_CTX_TASK_ID='branching_ext_python' AIRFLOW_CTX_EXECUTION_DATE='2024-09-20T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-20T00:00:00+00:00'
+[2024-09-22T11:19:34.045+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-09-22T11:19:34.050+0000] {baseoperator.py:400} WARNING - BranchExternalPythonOperator.execute cannot be called outside TaskInstance!
+[2024-09-22T11:19:36.693+0000] {baseoperator.py:400} WARNING - BranchExternalPythonOperator.execute cannot be called outside TaskInstance!
+[2024-09-22T11:19:37.047+0000] {process_utils.py:183} INFO - Executing cmd: /home/***/.local/bin/python /tmp/venv-callbisp290n/script.py /tmp/venv-callbisp290n/script.in /tmp/venv-callbisp290n/script.out /tmp/venv-callbisp290n/string_args.txt /tmp/venv-callbisp290n/termination.log
+[2024-09-22T11:19:37.052+0000] {process_utils.py:187} INFO - Output:
+[2024-09-22T11:19:50.293+0000] {python.py:237} INFO - Done. Returned value was: ext_py_c
+[2024-09-22T11:19:50.294+0000] {branch.py:36} INFO - Branch into ext_py_c
+[2024-09-22T11:19:50.298+0000] {skipmixin.py:178} INFO - Following branch ext_py_c
+[2024-09-22T11:19:50.486+0000] {skipmixin.py:246} INFO - Skipping tasks [('ext_py_b', -1), ('ext_py_d', -1), ('ext_py_a', -1)]
+[2024-09-22T11:19:51.058+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-09-22T11:19:51.370+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=example_branch_operator, task_id=branching_ext_python, run_id=scheduled__2024-09-20T00:00:00+00:00, execution_date=20240920T000000, start_date=20240922T111927, end_date=20240922T111951
+[2024-09-22T11:19:52.119+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-09-22T11:19:52.203+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-09-22T11:19:52.899+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

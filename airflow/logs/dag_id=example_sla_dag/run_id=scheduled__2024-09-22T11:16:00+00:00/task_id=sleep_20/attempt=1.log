@@ -1,0 +1,20 @@
+[2024-09-22T11:31:17.089+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-09-22T11:31:17.350+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_sla_dag.sleep_20 scheduled__2024-09-22T11:16:00+00:00 [queued]>
+[2024-09-22T11:31:17.570+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_sla_dag.sleep_20 scheduled__2024-09-22T11:16:00+00:00 [queued]>
+[2024-09-22T11:31:17.586+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-09-22T11:31:18.019+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): sleep_20> on 2024-09-22 11:16:00+00:00
+[2024-09-22T11:31:18.059+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=1048) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-09-22T11:31:18.064+0000] {standard_task_runner.py:64} INFO - Started process 1051 to run task
+[2024-09-22T11:31:18.072+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'example_sla_dag', 'sleep_20', 'scheduled__2024-09-22T11:16:00+00:00', '--job-id', '2633', '--raw', '--subdir', '/home/***/.local/lib/python3.12/site-packages/***/example_dags/example_sla_dag.py', '--cfg-path', '/tmp/tmp5csxpthx']
+[2024-09-22T11:31:18.147+0000] {standard_task_runner.py:91} INFO - Job 2633: Subtask sleep_20
+[2024-09-22T11:31:18.840+0000] {task_command.py:426} INFO - Running <TaskInstance: example_sla_dag.sleep_20 scheduled__2024-09-22T11:16:00+00:00 [running]> on host 1d2bd9c1668e
+[2024-09-22T11:31:19.840+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='email@example.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='example_sla_dag' AIRFLOW_CTX_TASK_ID='sleep_20' AIRFLOW_CTX_EXECUTION_DATE='2024-09-22T11:16:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-22T11:16:00+00:00'
+[2024-09-22T11:31:19.843+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-09-22T11:31:39.844+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-09-22T11:31:39.914+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-09-22T11:31:39.942+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=example_sla_dag, task_id=sleep_20, run_id=scheduled__2024-09-22T11:16:00+00:00, execution_date=20240922T111600, start_date=20240922T113117, end_date=20240922T113139
+[2024-09-22T11:31:40.818+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-09-22T11:31:40.878+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-09-22T11:31:41.669+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

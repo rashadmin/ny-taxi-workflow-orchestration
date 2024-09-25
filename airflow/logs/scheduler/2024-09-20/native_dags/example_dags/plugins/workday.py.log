@@ -1,0 +1,4 @@
+[2024-09-20T15:13:59.601+0000] {processor.py:161} INFO - Started process (PID=104) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/plugins/workday.py
+[2024-09-20T15:13:59.602+0000] {processor.py:830} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2024-09-20T15:13:59.604+0000] {logging_mixin.py:188} INFO - [2024-09-20T15:13:59.604+0000] {dagbag.py:545} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/plugins/workday.py
+[2024-09-20T15:14:30.003+0000] {logging_mixin.py:188} INFO - [2024-09-20T15:14:30.001+0000] {timeout.py:68} ERROR - Process timed out, PID: 104
